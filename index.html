@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakeer | Portfolio</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #111;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: #00e5ff;
+}
+
+.navbar nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar nav a:hover {
+    color: #00e5ff;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10%;
+    background: linear-gradient(135deg, #00e5ff, #0077ff);
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+}
+
+.hero-text span {
+    color: #111;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    background: #111;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: white;
+    color: #111;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #111;
+}
+
+/* Image */
+.hero-img img {
+    width: 220px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* Sections */
+.section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #0077ff;
+    margin-bottom: 20px;
+}
+
+.gray {
+    background: #f5f5f5;
+}
+/* education*/
+.education {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.education-card {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-card {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 280px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form button {
+    background: #e7adf3;
+    color: gray;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #a5c3eb;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        margin-top: 30px;
+    }
+}
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakeer | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <h2 class="logo"></h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm <span>Shaik Mohammed Shakeer</span></h1>
+        <h3>Web Developer</h3>
+
+        <div class="hero-buttons">
+            <a href="resume.pdf" download class="btn">Download Resume</a>
+            <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="hero-img">
+        <img src="C:\Users\DELL\Desktop\fronted.html\images\1767708496315-51c6463d-a40c-4414-a6ef-273f93172bd5_1.jpg" alt="Profile">
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate fresher with fundamentals in Java and Web Development.
+        Looking for opportunities to grow and contribute to real-world projects.
+    </p>
+</section>
+<!--Education-->
+<section id="Education" class="section gray">
+    <h2>Education</h2>
+    <div class="Education-card">
+        <h3>Bachelor of Technology (B.tech)</h3>
+        <p>computer science and Engineering</p>
+        <p><strong>year:</strong> 2021 - 2025</p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section gray">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">JavaScript (Basic)</div>
+    </div>
+</section>
+<!--project-->
+<section id="projects" class="projects">
+    <h2>My projects</h2>
+    <div class="project-container">
+    <div class="project-card">
+        <h3>Neural lights : Yolo powered traffic lights</h3>
+        <p>Yolo powered intelligent traffic light system for real time vehicle detection and adaptive signal control</p>
+    </div>
+    </div>
+</section>
+<!-- Contact -->
+<section id="contact" class="section gray">
+    <h2>Contact Me</h2>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        <p>Email: <b>shaikshakeershaik3@email.com</b></p>
+        <p>Phone: <b>+91 8247732577</b></p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Shaik Mohammed Shakeer | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
